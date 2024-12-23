@@ -1,16 +1,14 @@
 from cx_Freeze import setup, Executable
+
+# pip install cx_Freeze
+
 # python setup.py build
-# https://jenyay.net/Programming/Cxfreeze
 
 setup(
-    name = "убей меня",
+    name = "hello",
     version = "0.1",
-    description = "убей меня АААААА",
+    description = "126525e fefef efe",
     # если приложение консольное то пишем - base=None
     # если приложение с графическим интерфейсом то пишем - base='Win32GUI'
-    executables = [Executable("main.py", base=None, icon="il_fullxfull.4526746696_j9bu.ico")]
+    executables = [Executable("main.py" , base="Win32GUI" , icon="icon_py.ico")]
 )
-
-
-
-
